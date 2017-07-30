@@ -21,174 +21,176 @@ ____   ____    .__   __
                                      -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>PS4Extreme &bull;</title>
+<head>
+  <title>PS4Extreme &bull;</title><!-- javascript -->
 
-        <!-- javascript -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script><!-- Latest compiled and minified CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel=
+  "stylesheet"><!-- Optional theme -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel=
+  "stylesheet"><!-- Latest compiled and minified JavaScript -->
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script><!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+  <!-- css -->
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style>
+                      html, body {
+                          height: 100%;
+                      }
 
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+                      body {
+                          margin: 0;
+                          padding: 0;
+                          width: 100%;
+                          display: table;
+                          font-weight: 100;
+                          font-family: 'Lato';
+                          font-weight: bold;
+                          color: #ffffff
+                      }
 
-        <!-- css -->
-        <style>
-            html, body {
-                height: 100%;
-            }
+                      .container {
+                          text-align: center;
+                          display: table-cell;
+                          vertical-align: middle;
+                      }
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-                font-weight: bold;
-                color: #ffffff
-            }
+                      .content {
+                          text-align: center;
+                          display: inline-block;
+                      }
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+                      .logo {
+                          display: none;
+                      }
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+                      .title {
+                          font-size: 96px;
+                          display: none;
+                      }
 
-            .logo {
-                display: none;
-            }
+                      .moto {
+                          font-size: 22px;
+                          display: none;
+                      }
 
-            .title {
-                font-size: 96px;
-                display: none;
-            }
+                      .downloadinfo {
+                          display: none;
+                      }
 
-            .moto {
-                font-size: 22px;
-                display: none;
-            }
+                      .footer {
+                          position: absolute;
+                          right: 0;
+                          bottom: 0;
+                          left: 0;
+                           height: 5%;
+                           color: #ffffff;
+                           background-color: #000000;
+                           text-align: center;
+                           display: none;
+                          }
 
-            .downloadinfo {
-                display: none;
-            }
-
-            .footer {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                 height: 5%;
-                 color: #ffffff;
-                 background-color: #000000;
-                 text-align: center;
-                 display: none;
-                }
-
-                * { box-sizing: border-box; }
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-#vidtop-content {
-    top: 0;
-    color: #fff;
-}
-.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
-.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
-}
-        </style>
-    </head>
-    <body>
-    <div class="video-background">
+                          * { box-sizing: border-box; }
+           .video-background {
+            background: #000;
+            position: fixed;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -99;
+           }
+           .video-foreground,
+           .video-background iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+           }
+           #vidtop-content {
+              top: 0;
+              color: #fff;
+           }
+           .vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+           .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+           .vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+           @media (min-aspect-ratio: 16/9) {
+            .video-foreground { height: 300%; top: -100%; }
+           }
+           @media (max-aspect-ratio: 16/9) {
+            .video-foreground { width: 300%; left: -100%; }
+           }
+           @media all and (max-width: 600px) {
+           .vid-info { width: 50%; padding: .5rem; }
+           .vid-info h1 { margin-bottom: .2rem; }
+           }
+           @media all and (max-width: 500px) {
+           .vid-info .acronym { display: none; }
+           }
+  </style>
+</head>
+<body>
+  <div class="video-background">
     <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/8LWZSGNjuF0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=8LWZSGNjuF0" frameborder="0" allowfullscreen></iframe>
+      <iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/8LWZSGNjuF0?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=8LWZSGNjuF0">
+      </iframe>
     </div>
   </div>
-    <div class="container">
+  <div class="container">
     <div class="content">
-    <div class="logo"><img src="https://www.psxhax.com/styles/default/xenforo/logo.png"></div>
-                <div class="title">PS4Extreme</div>
-               <div class="moto"> ~ A Porno away from a Jailbreak ~ </div>
-
-               <!-- Trigger the modal with a button -->
-               <div class="downloadinfo">
-               <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#download">Download</button>
-               </div>
-               <!-- Modal -->
-               <div id="download" class="modal fade" role="dialog">
-               <div class="modal-dialog">
-               <!-- Modal content-->
-               <div class="modal-content">
-               <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <font color="black">
-               <h4 class="modal-title">PS4Extreme</h4>
-               </font>
-               </div>
-               <div class="modal-body">
-               <font color="black">
-               <p>Welcome to PS4Extreme RTM Source Tool By Vultra.</p>
-               </font>
-               </div>
-               <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-hidden="true">Close</button>
-               <a href="https://github.com/Vultra/vultra.github.io/releases/download/V1/PS4Extreme.rar" role="button" class="btn btn-primary">Download Source</a>
-               </div>
-               </div>
-               </div>
-               </div>
-
-               </div>
+      <div class="logo"><img src="https://www.psxhax.com/styles/default/xenforo/logo.png"></div>
+      <div class="title">
+        PS4Extreme
+      </div>
+      <div class="moto">
+        ~ A Porno away from a Jailbreak ~
+      </div><!-- Trigger the modal with a button -->
+      <div class="downloadinfo">
+        <button class="btn btn-info btn-lg" data-target="#download" data-toggle="modal" type=
+        "button">Download</button>
+      </div><!-- Modal -->
+      <div class="modal fade" id="download" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal" type="button">&times;</button> <font color=
+              "black"></font>
+              <h4 class="modal-title"><font color="black">PS4Extreme</font></h4>
+            </div>
+            <div class="modal-body">
+              <font color="black"></font>
+              <p><font color="black">Welcome to PS4Extreme RTM Source Tool By Vultra.</font></p>
+            </div>
+            <div class="modal-footer">
+              <button aria-hidden="true" class="btn btn-secondary" data-dismiss="modal" type=
+              "button">Close</button> <a class="btn btn-primary" href=
+              "https://github.com/Vultra/vultra.github.io/releases/download/V1/PS4Extreme.rar" role=
+              "button">Download Source</a>
+            </div>
+          </div>
         </div>
-     
-        <div class="footer">
-        <p><script type="text/javascript"> document.write(new Date().getFullYear());</script>&copy; <a href="https://www.psxhax.com/members/wultra.560/">Vultra</a> <br> PS4Extreme is not associated in any way with <a href="https://playstation.com">Playstation</a> and <a href="https://psxhax.com/">PSXHAX</a></p>
-        </div>
-
-    </body>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $(".logo").fadeIn(2500);
-            $(".title").fadeIn(4500);
-            $(".moto").fadeIn(6500);
-            $(".downloadinfo").fadeIn(8500);
-            $(".footer").fadeIn(8500);
-        });
-    </script>
+                      document.write(new Date().getFullYear());
+    </script>&copy; <a href="https://www.psxhax.com/members/wultra.560/">Vultra</a><br>
+    PS4Extreme is not associated in any way with <a href="https://playstation.com">Playstation</a>
+    and <a href="https://psxhax.com/">PSXHAX</a></p>
+  </div>
+  <script type="text/javascript">
+                  $(document).ready(function(){
+                      $(".logo").fadeIn(2500);
+                      $(".title").fadeIn(4500);
+                      $(".moto").fadeIn(6500);
+                      $(".downloadinfo").fadeIn(8500);
+                      $(".footer").fadeIn(8500);
+                  });
+  </script>
+</body>
 </html>
