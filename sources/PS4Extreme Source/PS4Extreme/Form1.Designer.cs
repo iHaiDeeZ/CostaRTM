@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.payloadps4 = new DevExpress.XtraBars.BarButtonItem();
             this.connectps4 = new DevExpress.XtraBars.BarButtonItem();
@@ -39,6 +40,7 @@
             this.ps4ip = new DevExpress.XtraBars.BarButtonItem();
             this.ps4cusnotify = new DevExpress.XtraBars.BarButtonItem();
             this.offsetschanger = new DevExpress.XtraBars.BarButtonItem();
+            this.checkforupdate = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -145,16 +147,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.jumpheight = new System.Windows.Forms.TrackBar();
             this.groupControl11 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
-            this.richTextBoxEx6 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
-            this.richTextBoxEx7 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
-            this.richTextBoxEx8 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
-            this.richTextBoxEx9 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
-            this.richTextBoxEx10 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
+            this.ghsimpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.ghrichTextBoxEx1 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
+            this.ghsimpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.ghsimpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.ghsimpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.ghsimpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.ghsimpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.ghrichTextBoxEx6 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
+            this.ghrichTextBoxEx7 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
+            this.ghrichTextBoxEx8 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
+            this.ghrichTextBoxEx9 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
+            this.ghrichTextBoxEx10 = new DevExpress.Tutorials.Controls.RichTextBoxEx();
             this.tabNavigationPage12 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabNavigationPage13 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.ghostsgetclients = new DevExpress.XtraEditors.SimpleButton();
@@ -238,9 +242,10 @@
             this.NetworkSniffer,
             this.ps4ip,
             this.ps4cusnotify,
-            this.offsetschanger});
+            this.offsetschanger,
+            this.checkforupdate});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 15;
+            this.ribbonControl1.MaxItemId = 16;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -324,6 +329,15 @@
             this.offsetschanger.Name = "offsetschanger";
             this.offsetschanger.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.offsetschanger_ItemClick);
             // 
+            // checkforupdate
+            // 
+            this.checkforupdate.Caption = "Check For Updates";
+            this.checkforupdate.Glyph = ((System.Drawing.Image)(resources.GetObject("checkforupdate.Glyph")));
+            this.checkforupdate.Id = 15;
+            this.checkforupdate.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("checkforupdate.LargeGlyph")));
+            this.checkforupdate.Name = "checkforupdate";
+            this.checkforupdate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.checkforupdate_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -353,6 +367,7 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.ps4ip);
             this.ribbonPageGroup2.ItemLinks.Add(this.ps4cusnotify);
             this.ribbonPageGroup2.ItemLinks.Add(this.offsetschanger);
+            this.ribbonPageGroup2.ItemLinks.Add(this.checkforupdate);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Tools";
             // 
@@ -406,7 +421,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PS4Extreme.Properties.Resources.cooltext250252126409785;
-            this.pictureBox4.Location = new System.Drawing.Point(51, 89);
+            this.pictureBox4.Location = new System.Drawing.Point(54, 89);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(541, 60);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -965,7 +980,7 @@
             // 
             // awpreset1
             // 
-            this.awpreset1.Location = new System.Drawing.Point(4, 17);
+            this.awpreset1.Location = new System.Drawing.Point(3, 17);
             this.awpreset1.Name = "awpreset1";
             this.awpreset1.Size = new System.Drawing.Size(121, 30);
             this.awpreset1.TabIndex = 0;
@@ -1293,7 +1308,7 @@
             // 
             // ghostsgodmode
             // 
-            this.ghostsgodmode.Location = new System.Drawing.Point(5, 24);
+            this.ghostsgodmode.Location = new System.Drawing.Point(5, 26);
             this.ghostsgodmode.Name = "ghostsgodmode";
             this.ghostsgodmode.Size = new System.Drawing.Size(75, 23);
             this.ghostsgodmode.TabIndex = 8;
@@ -1337,101 +1352,125 @@
             // 
             // groupControl11
             // 
-            this.groupControl11.Controls.Add(this.simpleButton6);
-            this.groupControl11.Controls.Add(this.simpleButton7);
-            this.groupControl11.Controls.Add(this.simpleButton8);
-            this.groupControl11.Controls.Add(this.simpleButton9);
-            this.groupControl11.Controls.Add(this.simpleButton10);
-            this.groupControl11.Controls.Add(this.richTextBoxEx6);
-            this.groupControl11.Controls.Add(this.richTextBoxEx7);
-            this.groupControl11.Controls.Add(this.richTextBoxEx8);
-            this.groupControl11.Controls.Add(this.richTextBoxEx9);
-            this.groupControl11.Controls.Add(this.richTextBoxEx10);
+            this.groupControl11.Controls.Add(this.ghsimpleButton1);
+            this.groupControl11.Controls.Add(this.ghrichTextBoxEx1);
+            this.groupControl11.Controls.Add(this.ghsimpleButton6);
+            this.groupControl11.Controls.Add(this.ghsimpleButton7);
+            this.groupControl11.Controls.Add(this.ghsimpleButton8);
+            this.groupControl11.Controls.Add(this.ghsimpleButton9);
+            this.groupControl11.Controls.Add(this.ghsimpleButton10);
+            this.groupControl11.Controls.Add(this.ghrichTextBoxEx6);
+            this.groupControl11.Controls.Add(this.ghrichTextBoxEx7);
+            this.groupControl11.Controls.Add(this.ghrichTextBoxEx8);
+            this.groupControl11.Controls.Add(this.ghrichTextBoxEx9);
+            this.groupControl11.Controls.Add(this.ghrichTextBoxEx10);
             this.groupControl11.Location = new System.Drawing.Point(212, 62);
             this.groupControl11.Name = "groupControl11";
-            this.groupControl11.Size = new System.Drawing.Size(200, 164);
+            this.groupControl11.Size = new System.Drawing.Size(200, 176);
             this.groupControl11.TabIndex = 3;
             this.groupControl11.Text = "Custom Classes 1-5";
             // 
-            // simpleButton6
+            // ghsimpleButton1
             // 
-            this.simpleButton6.Location = new System.Drawing.Point(111, 138);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(75, 18);
-            this.simpleButton6.TabIndex = 8;
-            this.simpleButton6.Text = "Change";
+            this.ghsimpleButton1.Location = new System.Drawing.Point(111, 150);
+            this.ghsimpleButton1.Name = "ghsimpleButton1";
+            this.ghsimpleButton1.Size = new System.Drawing.Size(75, 18);
+            this.ghsimpleButton1.TabIndex = 10;
+            this.ghsimpleButton1.Text = "Change";
+            this.ghsimpleButton1.Click += new System.EventHandler(this.ghsimpleButton1_Click);
             // 
-            // simpleButton7
+            // ghrichTextBoxEx1
             // 
-            this.simpleButton7.Location = new System.Drawing.Point(111, 113);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(75, 18);
-            this.simpleButton7.TabIndex = 7;
-            this.simpleButton7.Text = "Change";
+            this.ghrichTextBoxEx1.Location = new System.Drawing.Point(5, 149);
+            this.ghrichTextBoxEx1.Name = "ghrichTextBoxEx1";
+            this.ghrichTextBoxEx1.Size = new System.Drawing.Size(100, 19);
+            this.ghrichTextBoxEx1.TabIndex = 9;
+            this.ghrichTextBoxEx1.Text = "Custom Class 6";
             // 
-            // simpleButton8
+            // ghsimpleButton6
             // 
-            this.simpleButton8.Location = new System.Drawing.Point(111, 88);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(75, 18);
-            this.simpleButton8.TabIndex = 6;
-            this.simpleButton8.Text = "Change";
+            this.ghsimpleButton6.Location = new System.Drawing.Point(111, 125);
+            this.ghsimpleButton6.Name = "ghsimpleButton6";
+            this.ghsimpleButton6.Size = new System.Drawing.Size(75, 18);
+            this.ghsimpleButton6.TabIndex = 8;
+            this.ghsimpleButton6.Text = "Change";
+            this.ghsimpleButton6.Click += new System.EventHandler(this.ghsimpleButton6_Click);
             // 
-            // simpleButton9
+            // ghsimpleButton7
             // 
-            this.simpleButton9.Location = new System.Drawing.Point(111, 63);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(75, 18);
-            this.simpleButton9.TabIndex = 5;
-            this.simpleButton9.Text = "Change";
+            this.ghsimpleButton7.Location = new System.Drawing.Point(111, 100);
+            this.ghsimpleButton7.Name = "ghsimpleButton7";
+            this.ghsimpleButton7.Size = new System.Drawing.Size(75, 18);
+            this.ghsimpleButton7.TabIndex = 7;
+            this.ghsimpleButton7.Text = "Change";
+            this.ghsimpleButton7.Click += new System.EventHandler(this.ghsimpleButton7_Click);
             // 
-            // simpleButton10
+            // ghsimpleButton8
             // 
-            this.simpleButton10.Location = new System.Drawing.Point(112, 37);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(75, 18);
-            this.simpleButton10.TabIndex = 4;
-            this.simpleButton10.Text = "Change";
+            this.ghsimpleButton8.Location = new System.Drawing.Point(111, 75);
+            this.ghsimpleButton8.Name = "ghsimpleButton8";
+            this.ghsimpleButton8.Size = new System.Drawing.Size(75, 18);
+            this.ghsimpleButton8.TabIndex = 6;
+            this.ghsimpleButton8.Text = "Change";
+            this.ghsimpleButton8.Click += new System.EventHandler(this.ghsimpleButton8_Click);
             // 
-            // richTextBoxEx6
+            // ghsimpleButton9
             // 
-            this.richTextBoxEx6.Location = new System.Drawing.Point(5, 137);
-            this.richTextBoxEx6.Name = "richTextBoxEx6";
-            this.richTextBoxEx6.Size = new System.Drawing.Size(100, 19);
-            this.richTextBoxEx6.TabIndex = 3;
-            this.richTextBoxEx6.Text = "Custom Class 5";
+            this.ghsimpleButton9.Location = new System.Drawing.Point(111, 50);
+            this.ghsimpleButton9.Name = "ghsimpleButton9";
+            this.ghsimpleButton9.Size = new System.Drawing.Size(75, 18);
+            this.ghsimpleButton9.TabIndex = 5;
+            this.ghsimpleButton9.Text = "Change";
+            this.ghsimpleButton9.Click += new System.EventHandler(this.ghsimpleButton9_Click);
             // 
-            // richTextBoxEx7
+            // ghsimpleButton10
             // 
-            this.richTextBoxEx7.Location = new System.Drawing.Point(5, 112);
-            this.richTextBoxEx7.Name = "richTextBoxEx7";
-            this.richTextBoxEx7.Size = new System.Drawing.Size(100, 19);
-            this.richTextBoxEx7.TabIndex = 2;
-            this.richTextBoxEx7.Text = "Custom Class 4";
+            this.ghsimpleButton10.Location = new System.Drawing.Point(112, 24);
+            this.ghsimpleButton10.Name = "ghsimpleButton10";
+            this.ghsimpleButton10.Size = new System.Drawing.Size(75, 18);
+            this.ghsimpleButton10.TabIndex = 4;
+            this.ghsimpleButton10.Text = "Change";
+            this.ghsimpleButton10.Click += new System.EventHandler(this.ghsimpleButton10_Click);
             // 
-            // richTextBoxEx8
+            // ghrichTextBoxEx6
             // 
-            this.richTextBoxEx8.Location = new System.Drawing.Point(5, 87);
-            this.richTextBoxEx8.Name = "richTextBoxEx8";
-            this.richTextBoxEx8.Size = new System.Drawing.Size(100, 19);
-            this.richTextBoxEx8.TabIndex = 1;
-            this.richTextBoxEx8.Text = "Custom Class 3";
+            this.ghrichTextBoxEx6.Location = new System.Drawing.Point(5, 124);
+            this.ghrichTextBoxEx6.Name = "ghrichTextBoxEx6";
+            this.ghrichTextBoxEx6.Size = new System.Drawing.Size(100, 19);
+            this.ghrichTextBoxEx6.TabIndex = 3;
+            this.ghrichTextBoxEx6.Text = "Custom Class 5";
             // 
-            // richTextBoxEx9
+            // ghrichTextBoxEx7
             // 
-            this.richTextBoxEx9.Location = new System.Drawing.Point(5, 62);
-            this.richTextBoxEx9.Name = "richTextBoxEx9";
-            this.richTextBoxEx9.Size = new System.Drawing.Size(100, 19);
-            this.richTextBoxEx9.TabIndex = 0;
-            this.richTextBoxEx9.Text = "Custom Class 2";
+            this.ghrichTextBoxEx7.Location = new System.Drawing.Point(5, 99);
+            this.ghrichTextBoxEx7.Name = "ghrichTextBoxEx7";
+            this.ghrichTextBoxEx7.Size = new System.Drawing.Size(100, 19);
+            this.ghrichTextBoxEx7.TabIndex = 2;
+            this.ghrichTextBoxEx7.Text = "Custom Class 4";
             // 
-            // richTextBoxEx10
+            // ghrichTextBoxEx8
             // 
-            this.richTextBoxEx10.Location = new System.Drawing.Point(5, 37);
-            this.richTextBoxEx10.Name = "richTextBoxEx10";
-            this.richTextBoxEx10.Size = new System.Drawing.Size(100, 19);
-            this.richTextBoxEx10.TabIndex = 0;
-            this.richTextBoxEx10.Text = "Custom Class 1";
+            this.ghrichTextBoxEx8.Location = new System.Drawing.Point(5, 74);
+            this.ghrichTextBoxEx8.Name = "ghrichTextBoxEx8";
+            this.ghrichTextBoxEx8.Size = new System.Drawing.Size(100, 19);
+            this.ghrichTextBoxEx8.TabIndex = 1;
+            this.ghrichTextBoxEx8.Text = "Custom Class 3";
+            // 
+            // ghrichTextBoxEx9
+            // 
+            this.ghrichTextBoxEx9.Location = new System.Drawing.Point(5, 49);
+            this.ghrichTextBoxEx9.Name = "ghrichTextBoxEx9";
+            this.ghrichTextBoxEx9.Size = new System.Drawing.Size(100, 19);
+            this.ghrichTextBoxEx9.TabIndex = 0;
+            this.ghrichTextBoxEx9.Text = "Custom Class 2";
+            // 
+            // ghrichTextBoxEx10
+            // 
+            this.ghrichTextBoxEx10.Location = new System.Drawing.Point(5, 24);
+            this.ghrichTextBoxEx10.Name = "ghrichTextBoxEx10";
+            this.ghrichTextBoxEx10.Size = new System.Drawing.Size(100, 19);
+            this.ghrichTextBoxEx10.TabIndex = 0;
+            this.ghrichTextBoxEx10.Text = "Custom Class 1";
             // 
             // tabNavigationPage12
             // 
@@ -1700,16 +1739,16 @@
         private DevExpress.XtraEditors.SimpleButton ghostsingamechanger;
         private DevExpress.Tutorials.Controls.RichTextBoxEx ghostsingametext;
         private DevExpress.XtraEditors.GroupControl groupControl11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.Tutorials.Controls.RichTextBoxEx richTextBoxEx6;
-        private DevExpress.Tutorials.Controls.RichTextBoxEx richTextBoxEx7;
-        private DevExpress.Tutorials.Controls.RichTextBoxEx richTextBoxEx8;
-        private DevExpress.Tutorials.Controls.RichTextBoxEx richTextBoxEx9;
-        private DevExpress.Tutorials.Controls.RichTextBoxEx richTextBoxEx10;
+        private DevExpress.XtraEditors.SimpleButton ghsimpleButton6;
+        private DevExpress.XtraEditors.SimpleButton ghsimpleButton7;
+        private DevExpress.XtraEditors.SimpleButton ghsimpleButton8;
+        private DevExpress.XtraEditors.SimpleButton ghsimpleButton9;
+        private DevExpress.XtraEditors.SimpleButton ghsimpleButton10;
+        private DevExpress.Tutorials.Controls.RichTextBoxEx ghrichTextBoxEx6;
+        private DevExpress.Tutorials.Controls.RichTextBoxEx ghrichTextBoxEx7;
+        private DevExpress.Tutorials.Controls.RichTextBoxEx ghrichTextBoxEx8;
+        private DevExpress.Tutorials.Controls.RichTextBoxEx ghrichTextBoxEx9;
+        private DevExpress.Tutorials.Controls.RichTextBoxEx ghrichTextBoxEx10;
         private DevExpress.XtraEditors.CheckButton ghoststhirdperson;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -1731,6 +1770,9 @@
         private System.Windows.Forms.TrackBar jumpheight;
         private DevExpress.XtraEditors.GroupControl groupControl14;
         private System.Windows.Forms.Label label2;
+        private DevExpress.XtraBars.BarButtonItem checkforupdate;
+        private DevExpress.XtraEditors.SimpleButton ghsimpleButton1;
+        private DevExpress.Tutorials.Controls.RichTextBoxEx ghrichTextBoxEx1;
     }
 }
 

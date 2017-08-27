@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>65687_ps4_gamepad_320x320_W1n_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -57,6 +60,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckForUpdate.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,10 +104,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="IMG\cooltext250252126409785.png" />
+    <Content Include="65687_ps4_gamepad_320x320_W1n_icon.ico" />
     <Content Include="IMG\c3499515752491.56296793df2c1.png" />
     <Content Include="IMG\call_of_duty_advanced_warfare_icon2.png" />
     <Content Include="IMG\call_of_duty_ghosts_icon_by_ni8crawler-d6rw22f.png" />

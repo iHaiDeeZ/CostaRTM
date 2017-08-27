@@ -100,9 +100,9 @@ C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extr
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
-C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\PS4ME.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\obj\Debug\PS4Extreme.ps4ipform.resources
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\DevExpress.CodeParser.v15.2.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\DevExpress.DemoData.v15.2.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\DevExpress.Tutorials.v15.2.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\DevExpress.DemoData.v15.2.Core.dll
+C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\obj\Debug\PS4Extreme.csprojResolveAssemblyReference.cache
