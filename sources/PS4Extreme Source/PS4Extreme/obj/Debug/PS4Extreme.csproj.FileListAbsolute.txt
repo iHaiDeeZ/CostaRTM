@@ -105,4 +105,3 @@ C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extr
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\DevExpress.DemoData.v15.2.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\DevExpress.Tutorials.v15.2.dll
 C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\bin\Debug\DevExpress.DemoData.v15.2.Core.dll
-C:\Users\MortexOfficial\documents\visual studio 2017\Projects\PS4Extreme\PS4Extreme\obj\Debug\PS4Extreme.csprojResolveAssemblyReference.cache
