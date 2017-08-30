@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <appinfo>
-<version>0.1.0.2</version>
+<version>0.1.0.3</version>
 <url>https://vultra.github.io/</url>
 <installer>https://github.com/Vultra/vultra.github.io/releases/download/V1.02/PS4Extreme.rar</installer>
 <date>27/08/2017</date>

@@ -1,5 +1,4 @@
-﻿using ps4Extreme;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +12,7 @@ namespace PS4Extreme
 {
     public partial class ps4ipform : DevExpress.XtraEditors.XtraForm
     {
-        IniFile ini = new IniFile(Application.StartupPath + @"\config.ini");
+        PS4Extreme.IniFile ini = new PS4Extreme.IniFile(Application.StartupPath + @"\config.ini");
         public ps4ipform()
         {
             InitializeComponent();

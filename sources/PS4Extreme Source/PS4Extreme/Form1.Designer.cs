@@ -51,7 +51,6 @@
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.tabPane2 = new DevExpress.XtraBars.Navigation.TabPane();
@@ -170,13 +169,13 @@
             this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabNavigationPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).BeginInit();
@@ -411,9 +410,9 @@
             // tabNavigationPage1
             // 
             this.tabNavigationPage1.Caption = "Welcome";
+            this.tabNavigationPage1.Controls.Add(this.label3);
             this.tabNavigationPage1.Controls.Add(this.pictureBox4);
             this.tabNavigationPage1.Controls.Add(this.label1);
-            this.tabNavigationPage1.Controls.Add(this.pictureBox1);
             this.tabNavigationPage1.Controls.Add(this.pictureBox5);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.Size = new System.Drawing.Size(655, 359);
@@ -421,7 +420,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PS4Extreme.Properties.Resources.cooltext250252126409785;
-            this.pictureBox4.Location = new System.Drawing.Point(54, 89);
+            this.pictureBox4.Location = new System.Drawing.Point(68, 160);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(541, 60);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -432,28 +431,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.label1.Location = new System.Drawing.Point(253, 173);
+            this.label1.Location = new System.Drawing.Point(300, 239);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "USER";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(155, 224);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::PS4Extreme.Properties.Resources.playstation_4;
-            this.pictureBox5.Location = new System.Drawing.Point(257, 3);
+            this.pictureBox5.Location = new System.Drawing.Point(228, 19);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(156, 80);
+            this.pictureBox5.Size = new System.Drawing.Size(182, 97);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 3;
             this.pictureBox5.TabStop = false;
@@ -994,7 +984,7 @@
             this.awclientsget.Size = new System.Drawing.Size(75, 23);
             this.awclientsget.TabIndex = 1;
             this.awclientsget.Text = "Get Clients";
-            this.awclientsget.Click += new System.EventHandler(this.awclientsget_Click);
+            this.awclientsget.Click += new System.EventHandler(this.Awclientsget_Click);
             // 
             // dataGridView1
             // 
@@ -1556,6 +1546,16 @@
             this.tabNavigationPage4.Name = "tabNavigationPage4";
             this.tabNavigationPage4.Size = new System.Drawing.Size(200, 100);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 15F);
+            this.label3.Location = new System.Drawing.Point(198, 239);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Welcome:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1577,7 +1577,6 @@
             this.tabNavigationPage1.ResumeLayout(false);
             this.tabNavigationPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.tabNavigationPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).EndInit();
@@ -1651,7 +1650,6 @@
         private DevExpress.XtraBars.Navigation.TabPane tabPane1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage4;
         private DevExpress.XtraBars.Navigation.TabNavigationPage tabNavigationPage2;
@@ -1773,6 +1771,7 @@
         private DevExpress.XtraBars.BarButtonItem checkforupdate;
         private DevExpress.XtraEditors.SimpleButton ghsimpleButton1;
         private DevExpress.Tutorials.Controls.RichTextBoxEx ghrichTextBoxEx1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

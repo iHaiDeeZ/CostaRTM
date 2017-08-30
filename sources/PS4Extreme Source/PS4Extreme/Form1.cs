@@ -11,14 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using PS4ME;
-using ps4Extreme;
 
 namespace PS4Extreme
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
         PS4ME.PS4ME PS4 = new PS4ME.PS4ME();
-        IniFile ini = new IniFile(Application.StartupPath + @"\config.ini");
+        PS4Extreme.IniFile ini = new PS4Extreme.IniFile(Application.StartupPath + @"\config.ini");
         private readonly CheckForUpdate checkForUpdate = null;
 
         public Form1()
@@ -31,6 +30,7 @@ namespace PS4Extreme
 
             jumpheight.Minimum = 0;
             jumpheight.Maximum = 20;
+
         }
 
         private void connectps4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -112,10 +112,10 @@ namespace PS4Extreme
 
         private void payloadps4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            MessageBox.Show("Up-Coming Future Feature.");
+            PS4.SendPayload(ini.IniReadValue("ps4", "Host"), "PS4ME.bin");
         }
 
-        private void awclientsget_Click(object sender, EventArgs e)
+        private void Awclientsget_Click(object sender, EventArgs e)
         {
             string[] processList = PS4.getProcesses();
 
