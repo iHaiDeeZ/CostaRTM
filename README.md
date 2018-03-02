@@ -10,7 +10,7 @@
   1.76 & 4.05
   
   <br>
-  4.05 - is not implemented yet but will be updated..
+  4.05 - is not implemented yet but will be updated in the near future...
   <br>
   This is an unfinished project! - use at caution.
 </p>
