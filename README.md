@@ -12,6 +12,5 @@
   <br>
   4.05 - is not implemented yet but will be updated..
   <br>
-  <font color="red">This is an unfinished project! - use at caution.</font>
-  <p style='color:red'>This is some red text.</p>
+  This is an unfinished project! - use at caution.
 </p>
